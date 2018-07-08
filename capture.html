@@ -1,69 +1,128 @@
-<!doctype html>
-<html lang='en'>
+<html lang="en">
     <head>
-        <meta charset='utf-8'>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta charset="utf-8">
+        <title>SJW - Capture</title>
+        <meta name="description" content="CSS only mobile first navigation">
+        <meta name="author" content="Ian Yates">
+
+        <!--Mobile specific meta goodness :)-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="author" content="Sam J Williams">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="js/script.js"></script>
-        <title>Capture - Sam J Williams</title>    
+
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata|Merriweather" rel="stylesheet">
+
+        <!--css-->
+        <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
     </head>
-
-
-    <body>
-        <!-- Nav Bar -->
+    <body id="home">
 
         <!-- banner -->
         <section class="small-banner">
             <div class="project-inner">
-                <h1>Project: Capture</h1>
-                <a href="index.html" class="fa fa-home"></a>
+                <h1>Project Capture</h1>
             </div>
         </section>
 
-        <section class="linkbar">
-            <div class="test">
-                <h2>Sam J Williams</h2>
-                <a href="index.html" class="fa fa-instagram"></a>
-                <a href="index.html" class="fa fa-github"></a>
-                <a href="index.html" class="fa fa-twitter"></a>
-                <a href="index.html" class="fa fa-linkedin"></a>
-                <a href="index.html" class="fa fa-car"></a>
-            </div>
-        </section>
+        <!-- Nav Bar -->
+        <ul>
+            <li class="mobile"><a href="capture.html"><i class="fas fa-camera"></i></a></li>
+            <li class="mobile"><a href="news.asp"><i class="fas fa-bicycle"></i></a></li>
+            <li class="mobile"><a href="contact.asp"><i class="fas fa-book-open"></i></a></li>
+            <li class="mobile"><a href="about.asp"><i class="fas fa-pencil-ruler"></i></a></li>
+            <li class="mobile" style="float: right"><a href="index.html"><i class="fas fa-home"></i></a></li>
 
-        <!-- Content -->
-        <div class="content">
-            <div class="row"> 
-                <div class="column">
-                    <img src="images/robbie.JPG" style="width:100%">
-                    <img src="images/hero.jpg" style="width:100%">
-                    <img src="images/ride.jpg" style="width:100%">
-                </div>
-                <div class="column">
-                    <img src="images/robbie2.JPG" style="width:100%">
-                    <img src="images/ride2.jpg" style="width:100%">
-                    <img src="images/ride3.jpg" style="width:100%">
-                </div>
-                <div class="column">
-                    <img src="images/capture.jpg" style="width:100%">
-                    <img src="images/make%20(2).jpg" style="width:100%">
-                    <img src="images/make.jpg" style="width:100%">
+            <li class="desktop"><a href="capture.html">CAPTURE</a></li>
+            <li class="desktop"><a href="news.asp">RIDE</a></li>
+            <li class="desktop"><a href="contact.asp">READ</a></li>
+            <li class="desktop"><a href="about.asp">MAKE</a></li>
+            <li class="desktop" style="float: right"><a href="index.html">HOME</a></li> 
+        </ul>
+
+        <!-- Picture Gallery -->
+                <div class="wrap">
+            <!-- Define all of the tiles: -->
+            <div class="box">
+                <div class="boxInner">
+                    <img src="/images/ride.jpg" />
+                    <div class="titleBox">Butterfly</div>
                 </div>
             </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/1.jpg" />
+                    <div class="titleBox">An old greenhouse</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/2.jpg" />
+                    <div class="titleBox">Purple wildflowers</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/3.jpg" />
+                    <div class="titleBox">A birdfeeder</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/10.jpg" />
+                    <div class="titleBox">Crocus close-up</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/4.jpg" />
+                    <div class="titleBox">The garden shop</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/5.jpg" />
+                    <div class="titleBox">Spring daffodils</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/6.jpg" />
+                    <div class="titleBox">Iris along the path</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/8.jpg" />
+                    <div class="titleBox">The garden blueprint</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/9.jpg" />
+                    <div class="titleBox">The patio</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/11.jpg" />
+                    <div class="titleBox">Bumble bee collecting nectar</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxInner">
+                    <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/12.jpg" />
+                    <div class="titleBox">Winding garden path</div>
+                </div>
+            </div>
+
         </div>
-
-        <!-- footer -->
-        <div class="footer">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-github"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-        </div>
-
-
-
+        <!-- /#wrap -->
+        
+        
     </body>
 </html>

@@ -31,7 +31,7 @@ body {
     color: white;
 
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/heros/hero1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/1080/hero1.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -53,29 +53,7 @@ body {
     color: white;
 
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/hero2-4k.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.hero-2 {
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Text styles */
-    text-align: center;
-    color: white;
-
-    /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/heros/hero2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/1080/hero2.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -97,7 +75,7 @@ body {
     color: white;
 
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/heros/hero3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/1080/hero3.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -119,7 +97,7 @@ body {
     color: white;
 
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/heros/hero4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/1080/hero4.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -141,7 +119,7 @@ body {
     color: white;
 
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/heros/hero5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.5)), url(../images/1080/hero5.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -150,7 +128,8 @@ body {
 
 .hero-inner h1 {
     /* Text styles */
-    font-size: 3em;
+    font-size: 5vw;
+
     /* Margins */
     margin-top: 0;
     margin-bottom: 0;
@@ -161,6 +140,7 @@ body {
     /* Positioning and sizing */
     display: block;
     width: 200px;
+
 
     /* Padding and margins */
     padding: 1em;
@@ -176,9 +156,26 @@ body {
     /* Border styles */
     border: 3px solid white;
     border-radius: 20px;
-
 }
 
-.heros {
-    
+.hero-inner i {
+    /* Positioning and sizing */
+
+
+    /* Padding and margins */
+    padding: 0em;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em;
 }
+
+@media (max-width: 640px) {
+    .hero-inner h1 {
+        font-size: 10vw;
+    }
+} 

@@ -1,150 +1,74 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+   background: #EEE;
+   font: 10px/13px 'Lucida Sans',sans-serif;
 }
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    width: 100%;
+.wrap {
+   overflow: hidden;
+   margin: 10px;
 }
-
-li {
-    float: left;
+.box {
+   float: left;
+   position: relative;
+   width: 20%;
+   padding-bottom: 20%;
 }
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.boxInner {
+   position: absolute;
+   left: 10px;
+   right: 10px;
+   top: 10px;
+   bottom: 10px;
+   overflow: hidden;
 }
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+.boxInner img {
+   width: 100%;
 }
-
-.active {
-    background-color: #4CAF50;
+.boxInner .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -50px;
+   background: #000;
+   background: rgba(0, 0, 0, 0.5);
+   color: #FFF;
+   padding: 10px;
+   text-align: center;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
 }
-
-li.mobile { display: none}
-
-@media (max-width: 640px) {
-    li.mobile { display: block}
-    li.desktop { display: none}
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.project-inner .btn{
-    /* Positioning and sizing */
-    display: block;
-    #width: 200px;
-
-    /* Padding and margins */
-    padding: 3px 9px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    /* Text styles */
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-
-    /* Border styles */
-    border: 3px solid white;
-    border-radius: 20px;
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+   margin-bottom: 0;
 }
-
-.project-inner p {
-    padding-bottom: 1em;
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
 }
-.small-banner {
-    /* Sizing */
-    min-width: 100vw;
-    min-height: 33vh;
-    max-width: 100vw;
-    max-height: 33vh;
-
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* Text styles */
-    text-align: center;
-    color: white;
-
-    /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)), url(../images/capture.jpg);
-    background-size:cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    /* Text styles */
-    color: white;
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
 }
-
-.small-banner a {
-    text-decoration: none;
-    color: white;
-    vertical-align: bottom;
-    font-size: 5vw;;
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
 }
-
-.small-banner h1{
-    font-size: 10vw;
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
 }
